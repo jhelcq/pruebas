@@ -1,0 +1,69 @@
+#right{
+  position: relative;
+}
+
+/*----- estilos de timeline -----*/
+#time_line_contenedor{
+  position: absolute; /*flotara sobre el mapa*/
+  z-index: 50; /*se visualizara encima del mapa*/
+  bottom: 10px; /*un espacio por debajo de la linea baja del mapa*/
+  width: 100%; /*ocupara todo el ancho del contenedor del mapa(es decir todo el ancho del mapa)*/ 
+  /*height: 100px;*/
+}
+
+#time_line{ /*este elemento contendra el time_line siempre estara centrado en el centro*/
+  position: relative; 
+  margin: 0 auto; /*centreado en el centro del mapa*/
+  overflow: hidden; /*ocultara las partes sobresalientes de la linea de tiempo(circulos y linea vertical)*/
+}
+
+.desplazador{
+  width: 24px;
+  height: 24px;
+  position: absolute; /*permitira posicionar los desplazadores a la izquierda y la derecha*/
+  background-color: white; /*esto ocultara la linea de tiempo que sobresale a los costados sobre los desplazadores izq. y der.*/
+  border-radius: 10px; /*algo estilo para los desplazadores*/
+}
+
+#desplazador_izquierda{
+  top: 0;
+  left: 0; /*posicionamos a la izquierda*/
+}
+
+#desplazador_derecha{
+  top: 0;
+  right: 0; /*posicionamos a la derecha*/
+}
+
+.contenedor_redondos{
+  width: 2000px; /*este valor se calcular automaticamente dependiendo de la cantidad de elementos que tenga el time_line*/
+  overflow: hidden; /*elemento no se reducira en alto por que flotan las lineas y los circulos*/
+  /*margin-left: -40px;*/ /*se desplazara la linea de tiempo a la izquierda o derecha*/
+}
+
+.linea{
+  margin-top: 12px; /*centrando verticalmente la linea de tiempo*/
+  width: 50px; /*ancho de cada linea entre cada circulo*/
+  border: 1px solid black;
+}
+
+.redondos{
+  border-radius: 50px;
+  margin-top: 6px; /*centrando verticalmente los circulos*/
+  width: 12px; /*ancho de cada circulo*/
+  height: 12px; /*alto de cada circulo*/
+  border: 1px solid black; 
+}
+
+.label_redondo{
+  width: 62px; /*ancho que permitira que se centre en linea con el circulo para el texto*/
+  text-align: center; /*centrando el texto*/
+}
+
+.primer_label_redondo{
+  margin-left: 25px;
+}
+
+.flotando{
+  float: left;
+}
