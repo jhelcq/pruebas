@@ -1,8 +1,8 @@
-var mapa = new google.maps.Map( $('.map').get(0) , {
+/*var mapa = new google.maps.Map( $('.map').get(0) , {
   center: { lat: -16.7638, lng: -68.8482},
   zoom: 5,
     streetViewControl: false
-});
+});*/
 
 //----- eventos para timeline -----
 $('.redondos').click(function(){
